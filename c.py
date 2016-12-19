@@ -8,7 +8,6 @@ cards = [ 'A', '1', '2', '3' , '4' , '5' , '6' , '7' , '8' , '9' , '10' , 'J' , 
 mothercards = []
 player1_cards = []
 
-
 class Deck:
     ranks=[string(n) for n in range(2,12)] + list('JQKA')
     suits= 'spathia karo kupes mpastunia'.split()
@@ -23,6 +22,7 @@ class Deck:
     def __getitem__(self,position):
         return self._cards[position]
 
+#a new comment
 @client.event
 async def on_message(message):
     # we do not want the bot to reply to itself
