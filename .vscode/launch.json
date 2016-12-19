@@ -6,7 +6,7 @@
             "type": "python",
             "request": "launch",
             "stopOnEntry": true,
-            "pythonPath": "${config.python.pythonPath}",
+            "pythonPath": "/Library/Frameworks/Python.framework/Versions/3.4/bin/python3",
             "program": "${file}",
             "cwd": "${workspaceRoot}",
             "debugOptions": [
