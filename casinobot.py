@@ -9,6 +9,7 @@ mothercards = []
 playercards = []
 Card = collections.namedtuple('Card', ['rank','suit'])
 
+#pull_check
 #Deck class
 class Deck:
     ranks=[str(n) for n in range(2,11)] + list('JQKA')
