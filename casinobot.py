@@ -1,16 +1,18 @@
 import discord
 import random
 import collections
+from random import randint
 
 
 client = discord.Client()
-cards = [ 'A', '1', '2', '3' , '4' , '5' , '6' , '7' , '8' , '9' , '10' , 'J' , 'Q' , 'K']
 mothercards = []
-player1_cards = []
+playercards = []
+Card = collections.namedtuple('Card', ['rank','suit'])
 
+#Deck class
 class Deck:
-    ranks=[string(n) for n in range(2,12)] + list('JQKA')
-    suits= 'spathia karo kupes mpastunia'.split()
+    ranks=[str(n) for n in range(2,11)] + list('JQKA')
+    suits= '♣️ ♦️ ♥️ ♠️'.split()
 
     def __init__(self):
         self._cards = [Card(rank,suit) for suit in self.suits
@@ -22,18 +24,19 @@ class Deck:
     def __getitem__(self,position):
         return self._cards[position]
 
-#a new comment
+    def __delitem__(self,position):
+        del self._cards[position]
+
+#Bot 
 @client.event
 async def on_message(message):
-    # we do not want the bot to reply to itself
     if message.author == client.user:
         return
 
+    #simple guess game
     if message.content.startswith('$guess'):
         await client.send_message(message.channel, 'Guess a number between 1 to 10')
         
-        
-
         def guess_check(m):
             return m.content.isdigit()
 
@@ -48,27 +51,42 @@ async def on_message(message):
         else:
             await client.send_message(message.channel, 'Sorry. It is actually {}.'.format(answer))
 
+"""
+BLACKJACK GAME
+
+"""
     if message.content.startswith('$game'):
-        deck=Deck();
+        deck=Deck()
+        print("HI")
+        print(len(deck))
         def choice_check(m):
             if (m == 'hit' or  m == 'stand'):
                 return m;
             return m;
 
+        def choose_random_card():
+            randomnum = randint(1,51)
+            string_to_return =  "{} {}".format(deck[randomnum].rank , deck[randomnum].suit)
+            del deck[randomnum]
+            print(len(deck))
+            return string_to_return
+    
+
 
         await client.send_message(message.channel , "Let's play blackjack!")
         await client.send_message(message.channel , 'I have \n' +choose_random_card())
 
-        await client.send_message(message.channel , 'Exeis \n' +choose_random_card() + ' kai ' +choose_random_card())
-        await client.send_message(message.channel , 'Γράψε <<hit>> για να χτυπήσεις ή <<stand>> για να μείνεις')
+        await client.send_message(message.channel , 'You have \n' +choose_random_card() + ' and ' +choose_random_card())
+        await client.send_message(message.channel , "Type hit or stand" )
 
-        choice = await client.wait_for_message(timeout = 10.0, author = message.author , check = choice_check)
+        choice = await client.wait_for_message(timeout = 30.0, author = message.author , check = choice_check)
 
 
         if choice is None:
-            await client.send_message(message.channel , 'Κάτι έγραψες λάθος ξαναάρχισε νέο παιχνίδι')
+            await client.send_message(message.channel , 'You typed something wrong')
+            return
         if (choice.content  == 'hit'):
-            await client.send_message(message.channel , 'Pare mia akomi karta')
+            await client.send_message(message.channel , 'Take another card')
         if (choice.content  == 'stand'):
             await client.send_message(message.channel , 'You stand')
 
@@ -78,16 +96,15 @@ async def on_message(message):
 
 
 
-
-
-
-
+"""
+DISCORD BOT SETTINGS
+"""
 @client.event
 async def on_ready():
     print('Logged in as')
     print(client.user.name)
     print(client.user.id)
-    print ('Hello master everything seems to be working ok')
+    print ('Bot working properly')
     print('------')
 
 client.run('MTg3NjYwNDA4MDIxMDU3NTM3.CuKrag.9X9myjLSYD2J9IX6ANWal4ZqPNM')
