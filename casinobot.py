@@ -16,7 +16,7 @@ class Deck:
 
     def __init__(self):
         self._cards = [Card(rank,suit) for suit in self.suits
-                for rank in self.ranks]
+                for rank in self.ranks]*6
 
     def __len__(self):
         return len(self._cards)
@@ -51,49 +51,62 @@ async def on_message(message):
         else:
             await client.send_message(message.channel, 'Sorry. It is actually {}.'.format(answer))
 
-"""
-BLACKJACK GAME
-
-"""
     if message.content.startswith('$game'):
+        #initialize deck
         deck=Deck()
-        print("HI")
         print(len(deck))
+
+        #check choice hit or stand
         def choice_check(m):
             if (m == 'hit' or  m == 'stand'):
                 return m;
             return m;
 
-        def choose_random_card():
+        #choose random card for either mother or player
+        def choose_random_card(person_choosing):
             randomnum = randint(1,51)
             string_to_return =  "{} {}".format(deck[randomnum].rank , deck[randomnum].suit)
+            if(person_choosing == "formother"):
+                mothercards.append(deck[randomnum])
+            else:
+                playercards.append(deck[randomnum])
             del deck[randomnum]
-            print(len(deck))
             return string_to_return
     
+        #show the cards of each player
+        async def printcards(whotoprint):
+            if(whotoprint == "mother"):
+                await client.send_message(message.channel , "Mother has:")
+                for card in mothercards:
+                    await client.send_message(message.channel , "{} {}".format(card.rank, card.suit))
+            else:
+                await client.send_message(message.channel , "Player has:")
+                for card in playercards:
+                    await client.send_message(message.channel , "{} {}".format(card.rank, card.suit))
+            return
 
-
+        #initial messages
         await client.send_message(message.channel , "Let's play blackjack!")
-        await client.send_message(message.channel , 'I have \n' +choose_random_card())
-
-        await client.send_message(message.channel , 'You have \n' +choose_random_card() + ' and ' +choose_random_card())
+        await client.send_message(message.channel , 'I have \n' +choose_random_card("formother"))
+        await client.send_message(message.channel , 'You have \n' +choose_random_card("forplayer") + ' and ' +choose_random_card("forplayer"))
         await client.send_message(message.channel , "Type hit or stand" )
 
-        choice = await client.wait_for_message(timeout = 30.0, author = message.author , check = choice_check)
 
+        while True:
+            choice = await client.wait_for_message(timeout = 30.0, author = message.author , check = choice_check)
 
-        if choice is None:
-            await client.send_message(message.channel , 'You typed something wrong')
-            return
-        if (choice.content  == 'hit'):
-            await client.send_message(message.channel , 'Take another card')
-        if (choice.content  == 'stand'):
-            await client.send_message(message.channel , 'You stand')
+            if choice is None:
+                await client.send_message(message.channel , 'You gave no answer game game will now stop')
+                return
+            if (choice.content  == 'hit'):
+                await client.send_message(message.channel , 'You grab '  +choose_random_card("forplayer"))
+            if (choice.content  == 'stand'):
+                await client.send_message(message.channel , 'You stand')
+                await printcards("mother")
+                await printcards("player_")
+                break
 
             
-            
-
-
 
 
 """
