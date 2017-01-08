@@ -171,19 +171,3 @@ async def on_message(message):
         else:
             await client.send_message(message.channel , 'I Win!!!')
         return
-
-            
-
-
-"""
-DISCORD BOT SETTINGS
-"""
-@client.event
-async def on_ready():
-    print('Logged in as')
-    print(client.user.name)
-    print(client.user.id)
-    print ('Bot working properly')
-    print('------')
-
-client.run('MTg3NjYwNDA4MDIxMDU3NTM3.CuKrag.9X9myjLSYD2J9IX6ANWal4ZqPNM')
