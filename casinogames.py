@@ -131,7 +131,19 @@ async def on_message(message):
         await client.send_message(message.channel , "Let's play blackjack!")
         await client.send_message(message.channel , 'I have \n' +choose_random_card("formother"))
         await client.send_message(message.channel , 'You have \n' +choose_random_card("forplayer") + ' and ' +choose_random_card("forplayer"))
-        await client.send_message(message.channel , "Type hit or stand" )
+        #check if player has blackjack
+        if sum_of_player_cards("player")==21:
+            await client.send_message(message.channel , "Player has blackjack!") 
+            await printcards("mother")
+            if sum_of_player_cards("mother") == 21:
+                await client.send_message(message.channel , "Dealer also has blackjack") 
+                await client.send_message(message.channel , "TIE") 
+                return
+            else:
+                await client.send_message(message.channel , "You WIN!") 
+                return
+        else:
+            await client.send_message(message.channel , "Type hit or stand" )
 
 
                     
@@ -156,6 +168,10 @@ async def on_message(message):
 
         await client.send_message(message.channel , "Dealer's turn")
         #mother logic
+        if (sum_of_player_cards("mother")==21):
+                await client.send_message(message.channel , "Dealer has blackjack") 
+                await client.send_message(message.channel , "I WIN!") 
+                return
         while sum_of_player_cards("mother")<17:
             await client.send_message(message.channel , 'Dealer Grabs: '  +choose_random_card("formother"))
             await printcards("mother")
