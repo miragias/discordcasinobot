@@ -1,5 +1,6 @@
 import discord
 from casinogames import *
+from bank import *
 
 """
 DISCORD BOT STARTUP SCREEN

@@ -1,6 +1,7 @@
 import discord
 import random
 import collections
+import sqlite3
 from random import randint
 
 
@@ -49,6 +50,17 @@ async def on_message(message):
         else:
             await client.send_message(message.channel, 'Sorry. It is actually {}.'.format(answer))
 
+#Test Output for money
+    if message.content.startswith('$money'):
+        await client.send_message(message.channel, 'Trying to add money')
+        conn = sqlite3.connect('money.db')
+        c = conn.cursor()
+        c.execute('SELECT NAME,MONEY FROM usermoney')
+        row1 = c.fetchone()
+        await client.send_message(message.channel, 'connected successfuly user {} has {} marks'.format(row1[0],row1[1]))
+        conn.close()
+        
+
     if message.content.startswith('$game'):
         #initialize deck and clear lists
         deck=Deck()
@@ -60,7 +72,7 @@ async def on_message(message):
         def choice_check(m):
             if (m == 'hit' or  m == 'stand'):
                 return m;
-            return m;
+            return False;
 
         #choose random card for either mother or player
         def choose_random_card(person_choosing):
@@ -124,6 +136,7 @@ async def on_message(message):
                 for card in playercards:
                     await client.send_message(message.channel , "{} {}".format(card.rank, card.suit))
             return
+
 
         #initial messages
         #hidden card for mother 
