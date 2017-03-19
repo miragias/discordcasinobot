@@ -3,7 +3,7 @@ import random
 import collections
 import sqlite3
 from random import randint
-
+#money work
 
 client = discord.Client()
 Card = collections.namedtuple('Card', ['rank', 'suit'])
