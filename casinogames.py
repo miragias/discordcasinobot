@@ -9,7 +9,6 @@ client = discord.Client()
 Card = collections.namedtuple('Card', ['rank', 'suit'])
 
 
-# Test
 # Deck class
 class Deck:
     ranks = [str(n) for n in range(2, 11)] + list('JQKA')
