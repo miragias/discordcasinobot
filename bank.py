@@ -1,4 +1,5 @@
 import discord
+#moneyworking
 
 client = discord.Client()
 
