@@ -2,10 +2,10 @@ import discord
 import random
 import collections
 import sqlite3
+from client import client
 from random import randint
 #money work
 
-client = discord.Client()
 Card = collections.namedtuple('Card', ['rank', 'suit'])
 
 
@@ -67,6 +67,7 @@ async def on_message(message):
         deck = Deck()
         mothercards = []
         playercards = []
+        print(client)
 
         # check choice hit or stand
         def choice_check(m):

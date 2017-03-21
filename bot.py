@@ -1,6 +1,6 @@
 import discord
-from casinogames import *
-#moneyworking
+from client import client
+import casinogames
 
 
 """
