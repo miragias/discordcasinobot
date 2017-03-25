@@ -28,36 +28,26 @@ class Deck:
 # Guess Game
 @asyncio.coroutine
 async def GuessGame(message):
-    if message.content.startswith('$guess'):
-        await client.send_message(message.channel, 'Guess a number between 1 to 10')
+    await client.send_message(message.channel, 'Guess a number between 1 to 10')
 
-        def guess_check(m):
-            return m.content.isdigit()
+    def guess_check(m):
+        return m.content.isdigit()
 
-        guess = await client.wait_for_message(timeout=5.0, author=message.author, check=guess_check)
-        answer = randint(1, 10)
-        if guess is None:
-            fmt = 'Sorry, you took too long. It was {}.'
-            await client.send_message(message.channel, fmt.format(answer))
-            return
-        if int(guess.content) == answer:
-            await client.send_message(message.channel, 'You are right!')
-        else:
-            await client.send_message(message.channel, 'Sorry. It is actually {}.'.format(answer))
+    guess = await client.wait_for_message(timeout=5.0, author=message.author, check=guess_check)
+    answer = randint(1, 10)
+    if guess is None:
+        fmt = 'Sorry, you took too long. It was {}.'
+        await client.send_message(message.channel, fmt.format(answer))
+        return
+    if int(guess.content) == answer:
+        await client.send_message(message.channel, 'You are right!')
+    else:
+        await client.send_message(message.channel, 'Sorry. It is actually {}.'.format(answer))
 
 
 # BlackJack Game
 @asyncio.coroutine
 async def BlackJack(message):
-    # # Test Output for money
-    # if message.content.startswith('$money'):
-    #     await client.send_message(message.channel, 'Trying to add money')
-    #     conn = sqlite3.connect('money.db')
-    #     c = conn.cursor()
-    #     c.execute('SELECT NAME,MONEY FROM usermoney')
-    #     row1 = c.fetchone()
-    #     await client.send_message(message.channel, 'connected successfuly user {} has {} marks'.format(row1[0], row1[1]))
-    #     conn.close()
 
     # initialize deck and clear lists
     deck = Deck()
