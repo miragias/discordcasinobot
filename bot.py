@@ -16,10 +16,10 @@ async def on_ready():
 # Start bot function depending on user command
 @client.event
 async def on_message(message):
-    print(message.author.display_name)
     if message.author == client.user:
             return
 
+    print(message.author.display_name)
     if message.content.startswith('$bj'):
             await BlackJack(message)
 
