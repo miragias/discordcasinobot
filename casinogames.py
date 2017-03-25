@@ -1,10 +1,7 @@
-import discord
 import asyncio
 import collections
-import sqlite3
 from client import client
 from random import randint
-#money work
 
 Card = collections.namedtuple('Card', ['rank', 'suit'])
 
@@ -16,7 +13,7 @@ class Deck:
 
     def __init__(self):
         self._cards = [Card(rank, suit) for suit in self.suits
-                for rank in self.ranks] * 6
+                       for rank in self.ranks] * 6
 
     def __len__(self):
         return len(self._cards)
@@ -27,9 +24,10 @@ class Deck:
     def __delitem__(self, position):
         del self._cards[position]
 
+
+# Guess Game
 @asyncio.coroutine
 async def GuessGame(message):
-    # simple guess game
     if message.content.startswith('$guess'):
         await client.send_message(message.channel, 'Guess a number between 1 to 10')
 
@@ -46,6 +44,7 @@ async def GuessGame(message):
             await client.send_message(message.channel, 'You are right!')
         else:
             await client.send_message(message.channel, 'Sorry. It is actually {}.'.format(answer))
+
 
 # BlackJack Game
 @asyncio.coroutine
@@ -172,21 +171,21 @@ async def BlackJack(message):
     await client.send_message(message.channel, "Dealer's turn")
     # mother logic
     if (sum_of_player_cards("mother") == 21):
-            await client.send_message(message.channel , "Dealer has blackjack")
-            await client.send_message(message.channel , "I WIN!")
+            await client.send_message(message.channel, "Dealer has blackjack")
+            await client.send_message(message.channel, "I WIN!")
             return
     while sum_of_player_cards("mother") < 17:
-        await client.send_message(message.channel , 'Dealer Grabs: ' + choose_random_card("formother"))
+        await client.send_message(message.channel, 'Dealer Grabs: ' + choose_random_card("formother"))
         await printcards("mother")
 
     if sum_of_player_cards("mother") >= 21:
-        await client.send_message(message.channel , 'Dealer Busted! You Win!')
+        await client.send_message(message.channel, 'Dealer Busted! You Win!')
         return
     else:
-        await client.send_message(message.channel , 'Dealer stands with: ' + str(sum_of_player_cards("mother")))
+        await client.send_message(message.channel, 'Dealer stands with: ' + str(sum_of_player_cards("mother")))
 
     if sum_of_player_cards("player") > sum_of_player_cards("mother"):
-        await client.send_message(message.channel , 'You Win!!!')
+        await client.send_message(message.channel, 'You Win!!!')
     else:
-        await client.send_message(message.channel , 'I Win!!!')
+        await client.send_message(message.channel, 'I Win!!!')
     return
