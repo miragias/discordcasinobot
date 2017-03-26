@@ -1,6 +1,6 @@
 from client import client
 from casinogames import BlackJack, GuessGame
-from transactions import TellUserMoney
+from transactions import TellUserMoney, AddUserToDB
 
 
 # Bot Startup Text
@@ -19,14 +19,17 @@ async def on_message(message):
     if message.author == client.user:
             return
 
-    print(message.author.display_name)
     if message.content.startswith('$bj'):
             await BlackJack(message)
 
     if message.content.startswith('$guess'):
             await GuessGame(message)
 
-    if message.content.startswith('$moneyleft'):
+    if message.content.startswith('$money'):
             await TellUserMoney(message)
+
+    if message.content.startswith('$register'):
+            await AddUserToDB(message)
+
 
 client.run('MTg3NjYwNDA4MDIxMDU3NTM3.CuKrag.9X9myjLSYD2J9IX6ANWal4ZqPNM')
