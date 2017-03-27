@@ -1,6 +1,7 @@
 from client import client
 from casinogames import BlackJack, GuessGame
 from transactions import TellUserMoney, AddUserToDB
+from roles import addRole, removeRole
 
 
 # Bot Startup Text
@@ -30,6 +31,12 @@ async def on_message(message):
 
     if message.content.startswith('$register'):
             await AddUserToDB(message)
+
+    if message.content.startswith('$addrole'):
+            await addRole(message)
+
+    if message.content.startswith('$removerole'):
+            await removeRole(message)
 
 
 client.run('MTg3NjYwNDA4MDIxMDU3NTM3.CuKrag.9X9myjLSYD2J9IX6ANWal4ZqPNM')

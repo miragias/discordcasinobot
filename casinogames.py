@@ -153,11 +153,7 @@ async def BlackJack(message):
 
     # Tell the user his money at the start
     await TellUserMoney(message)
-    print("before")
-    print(moneybet)
     moneybet = await setBetAmount()
-    print('after')
-    print(moneybet)
     # Check if betting worked
     if moneybet is None:
         return
