@@ -1,11 +1,11 @@
 # discordcasinobot
 Some simple games for our greek discord server.
 
-Working:
-Blackjack game.
+# FEATURES
+- Blackjack game.
+- Give Role to Users.
+- Keep Database with usermoney.
 
-TODO: 
-  ->Keep money in local database file.
-  ->Make the python project easy for othere pc's to build with dependencies.
-  ->Make LoL stats for server.
-  ->Give roles to users. 
+### TODO: 
+  - Make the python project easy for othere pc's to build with dependencies.
+  - Make LoL stats for server.

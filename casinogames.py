@@ -1,5 +1,10 @@
 import asyncio
 import collections
+<<<<<<< HEAD
+=======
+from client import client
+from transactions import CheckIfUserHasEnoughMoney, TellUserMoney, ChangeUserMoney
+>>>>>>> b9e2afbcd493016bcdae21618b7927fbd2e57281
 from random import randint
 
 Card = collections.namedtuple('Card', ['rank', 'suit'])
@@ -52,10 +57,21 @@ async def BlackJack(client , message):
     deck = Deck()
     mothercards = []
     playercards = []
+    moneybet = 0
 
     # check choice hit or stand
     def choice_check(m):
         if (m.content.startswith('hit') or m.content.startswith('stand')):
+            return True
+        return False
+
+    def yes_no_choice(m):
+        if (m.content.startswith('yes') or m.content.startswith('no')):
+            return True
+        return False
+
+    def bet_check(m):
+        if (m.content.isdigit):
             return True
         return False
 
@@ -69,6 +85,26 @@ async def BlackJack(client , message):
             playercards.append(deck[randomnum])
         del deck[randomnum]
         return string_to_return
+
+    async def setBetAmount():
+        await client.send_message(message.channel, 'Set a bet')
+        betAmount = await client.wait_for_message(timeout=30.0, author=message.author, check=bet_check)
+        if betAmount is None:
+            await client.send_message(message.channel, 'You didn\t give an answer or you gave no number try giving the command again')
+            return
+        while True:
+            if not CheckIfUserHasEnoughMoney(message, int(betAmount.content)):
+                await client.send_message(message.channel, 'You do not have enough money bet a different amount')
+                betAmount = await client.wait_for_message(timeout=30.0, author=message.author, check=bet_check)
+                if betAmount is None:
+                    await client.send_message(message.channel, 'You gave no answer game will exit')
+                    return
+            else:
+                break
+
+        moneybet = int(betAmount.content)
+        ChangeUserMoney(message, -moneybet)
+        return moneybet
 
     def sum_of_player_cards(player):
         sum = 0
@@ -118,6 +154,12 @@ async def BlackJack(client , message):
                 await client.send_message(message.channel, "{} {}".format(card.rank, card.suit))
         return
 
+    # Tell the user his money at the start
+    await TellUserMoney(message)
+    moneybet = await setBetAmount()
+    # Check if betting worked
+    if moneybet is None:
+        return
     # initial messages
     # hidden card for mother
     choose_random_card("formother")
@@ -131,9 +173,11 @@ async def BlackJack(client , message):
         if sum_of_player_cards("mother") == 21:
             await client.send_message(message.channel, "Dealer also has blackjack")
             await client.send_message(message.channel, "TIE")
+            ChangeUserMoney(message, moneybet)
             return
         else:
             await client.send_message(message.channel, "You WIN!")
+            ChangeUserMoney(message, 2 * moneybet)
             return
     else:
         await client.send_message(message.channel, "Type hit or stand")
@@ -169,12 +213,14 @@ async def BlackJack(client , message):
 
     if sum_of_player_cards("mother") >= 21:
         await client.send_message(message.channel, 'Dealer Busted! You Win!')
+        ChangeUserMoney(message, 2 * moneybet)
         return
     else:
         await client.send_message(message.channel, 'Dealer stands with: ' + str(sum_of_player_cards("mother")))
 
     if sum_of_player_cards("player") > sum_of_player_cards("mother"):
         await client.send_message(message.channel, 'You Win!!!')
+        ChangeUserMoney(message, 2 * moneybet)
     else:
         await client.send_message(message.channel, 'I Win!!!')
     return
