@@ -1,11 +1,8 @@
-import discord
-#moneyworking
 
-client = discord.Client()
 
 
 @client.event
-async def on_message(message):
+async def on_message(client , message):
 
     if message.author == client.user:
         return

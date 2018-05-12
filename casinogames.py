@@ -1,10 +1,7 @@
 import asyncio
 import collections
-<<<<<<< HEAD
-=======
 from client import client
 from transactions import CheckIfUserHasEnoughMoney, TellUserMoney, ChangeUserMoney
->>>>>>> b9e2afbcd493016bcdae21618b7927fbd2e57281
 from random import randint
 
 Card = collections.namedtuple('Card', ['rank', 'suit'])

@@ -1,11 +1,9 @@
 import asyncio
 import sqlite3
-from client import client
-
 
 # Output User Money
 @asyncio.coroutine
-async def TellUserMoney(message):
+async def TellUserMoney(client , message):
     conn = sqlite3.connect('money.db')
     c = conn.cursor()
     name = str(message.author.display_name)
@@ -29,7 +27,7 @@ def CheckIfUserInDB(username, c):
 
 
 @asyncio.coroutine
-async def AddUserToDB(message):
+async def AddUserToDB(client , message):
     conn = sqlite3.connect('money.db')
     c = conn.cursor()
     name = str(message.author.display_name)

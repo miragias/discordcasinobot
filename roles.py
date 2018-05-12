@@ -1,4 +1,4 @@
-from client import client
+
 
 roleList = ['ow', 'lol', 'csgo']
 
@@ -6,7 +6,7 @@ roleList = ['ow', 'lol', 'csgo']
 
 
 @client.event
-async def addRole(message):
+async def addRole(client , message):
     # Get Available Roles From Server
     availableServerRoles = message.server.roles
     rolemessage = str(message.content)
@@ -20,7 +20,7 @@ async def addRole(message):
 
 
 @client.event
-async def removeRole(message):
+async def removeRole(client , message):
     # Get Available Roles From Server
     rolemessage = str(message.content)
     roles = rolemessage.split()
