@@ -1,0 +1,706 @@
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:sent the identify payload to create the websocket
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event ready
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:sent the identify payload to create the websocket
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event ready
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:Run has been initiated!!
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:sent the identify payload to create the websocket
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event ready
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:Run has been initiated!!
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:sent the identify payload to create the websocket
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event ready
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:sent the identify payload to create the websocket
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event ready
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.client:logging in using static token
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:sent the identify payload to create the websocket
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event ready
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:sent the identify payload to create the websocket
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event ready
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.client:logging in using static token
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.client:logging in using static token
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:sent the identify payload to create the websocket
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event ready
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event member_update
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:sent the identify payload to create the websocket
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event ready
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:sent the identify payload to create the websocket
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event ready
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:sent the identify payload to create the websocket
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event ready
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:on_ready has successfully been registered as an event
+INFO:discord.client:on_message has successfully been registered as an event
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+INFO:discord.gateway:sent the identify payload to create the websocket
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event socket_raw_receive
+DEBUG:discord.client:Dispatching event socket_response
+DEBUG:discord.client:Dispatching event server_available
+DEBUG:discord.client:Dispatching event ready

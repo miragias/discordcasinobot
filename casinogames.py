@@ -1,6 +1,5 @@
 import asyncio
 import collections
-from client import client
 from random import randint
 
 Card = collections.namedtuple('Card', ['rank', 'suit'])
@@ -27,7 +26,7 @@ class Deck:
 
 # Guess Game
 @asyncio.coroutine
-async def GuessGame(message):
+async def GuessGame(client , message):
     await client.send_message(message.channel, 'Guess a number between 1 to 10')
 
     def guess_check(m):
@@ -47,7 +46,7 @@ async def GuessGame(message):
 
 # BlackJack Game
 @asyncio.coroutine
-async def BlackJack(message):
+async def BlackJack(client , message):
 
     # initialize deck and clear lists
     deck = Deck()
