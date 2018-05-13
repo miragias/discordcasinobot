@@ -1,7 +1,7 @@
-from casinogames import BlackJack, GuessGame
-#from transactions import TellUserMoney
-from transactions import TellUserMoney, AddUserToDB
-from roles import addRole, removeRole
+from casinogames import blackjack, guess_game
+from transactions import tell_user_money, add_user_to_db
+from roles import add_role,remove_role
+
 from multiprocessing import Process
 import discord
 import asyncio
@@ -20,25 +20,22 @@ def run_bot():
         print('Bot initialized properly')
         print('------')
 
-
     @client.event
     async def on_message(message):
         if message.author == client.user:
                 return
         if message.content.startswith('$bj'):
-                await BlackJack(client , message)
+                await blackjack(client , message)
         if message.content.startswith('$guess'):
-                await GuessGame(client , message)
+                await guess_game(client , message)
         if message.content.startswith('$moneyleft'):
-                await TellUserMoney(message)
+                await tell_user_money(client , message)
         if message.content.startswith('$register'):
-            await AddUserToDB(message)
-
+            await add_user_to_db(client , message)
         if message.content.startswith('$addrole'):
-                await addRole(message)
-
+                await add_role(client , message)
         if message.content.startswith('$removerole'):
-                await removeRole(message)
+                await remove_role(client , message)
 
     async def get_server_data():
         while True:
@@ -50,9 +47,16 @@ def run_bot():
     loop.create_task(get_server_data())
     client.run('MTg3NjYwNDA4MDIxMDU3NTM3.CuKrag.9X9myjLSYD2J9IX6ANWal4ZqPNM')
 
+#TODO(JohnMir): Flask subproccess here
+def do_something():
+        while True:
+                pass
+
 if __name__ == '__main__':
     p = Process(target=run_bot, args=())
     p.start()
+    d = Process(target=do_something, args=())
+    d.start()
     p.join()
 
 

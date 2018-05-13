@@ -1,7 +1,6 @@
 import asyncio
 import collections
-from client import client
-from transactions import CheckIfUserHasEnoughMoney, TellUserMoney, ChangeUserMoney
+from transactions import check_if_user_has_enough_money, tell_user_money, change_user_money
 from random import randint
 
 Card = collections.namedtuple('Card', ['rank', 'suit'])
@@ -28,7 +27,7 @@ class Deck:
 
 # Guess Game
 @asyncio.coroutine
-async def GuessGame(client , message):
+async def guess_game(client , message):
     await client.send_message(message.channel, 'Guess a number between 1 to 10')
 
     def guess_check(m):
@@ -48,7 +47,7 @@ async def GuessGame(client , message):
 
 # BlackJack Game
 @asyncio.coroutine
-async def BlackJack(client , message):
+async def blackjack(client , message):
 
     # initialize deck and clear lists
     deck = Deck()
@@ -90,7 +89,7 @@ async def BlackJack(client , message):
             await client.send_message(message.channel, 'You didn\t give an answer or you gave no number try giving the command again')
             return
         while True:
-            if not CheckIfUserHasEnoughMoney(message, int(betAmount.content)):
+            if not check_if_user_has_enough_money(message, int(betAmount.content)):
                 await client.send_message(message.channel, 'You do not have enough money bet a different amount')
                 betAmount = await client.wait_for_message(timeout=30.0, author=message.author, check=bet_check)
                 if betAmount is None:
@@ -100,7 +99,7 @@ async def BlackJack(client , message):
                 break
 
         moneybet = int(betAmount.content)
-        ChangeUserMoney(message, -moneybet)
+        change_user_money(message, -moneybet)
         return moneybet
 
     def sum_of_player_cards(player):
@@ -143,16 +142,20 @@ async def BlackJack(client , message):
     async def printcards(whotoprint):
         if(whotoprint == "mother"):
             await client.send_message(message.channel, "Dealer has: ")
+            dealer_cards = ""
             for card in mothercards:
-                await client.send_message(message.channel, "{} {}".format(card.rank, card.suit))
+                dealer_cards += "{} {}".format(card.rank , card.suit) + "  "
+            await client.send_message(message.channel , dealer_cards)
         else:
             await client.send_message(message.channel, "Player has: ")
+            player_cards = ""
             for card in playercards:
-                await client.send_message(message.channel, "{} {}".format(card.rank, card.suit))
+                player_cards += "{} {}".format(card.rank , card.suit) + "  "
+            await client.send_message(message.channel, player_cards)
         return
 
     # Tell the user his money at the start
-    await TellUserMoney(message)
+    await tell_user_money(client, message)
     moneybet = await setBetAmount()
     # Check if betting worked
     if moneybet is None:
@@ -170,11 +173,11 @@ async def BlackJack(client , message):
         if sum_of_player_cards("mother") == 21:
             await client.send_message(message.channel, "Dealer also has blackjack")
             await client.send_message(message.channel, "TIE")
-            ChangeUserMoney(message, moneybet)
+            change_user_money(message, moneybet)
             return
         else:
             await client.send_message(message.channel, "You WIN!")
-            ChangeUserMoney(message, 2 * moneybet)
+            change_user_money(message, 2 * moneybet)
             return
     else:
         await client.send_message(message.channel, "Type hit or stand")
@@ -210,14 +213,14 @@ async def BlackJack(client , message):
 
     if sum_of_player_cards("mother") >= 21:
         await client.send_message(message.channel, 'Dealer Busted! You Win!')
-        ChangeUserMoney(message, 2 * moneybet)
+        change_user_money(message, 2 * moneybet)
         return
     else:
         await client.send_message(message.channel, 'Dealer stands with: ' + str(sum_of_player_cards("mother")))
 
     if sum_of_player_cards("player") > sum_of_player_cards("mother"):
         await client.send_message(message.channel, 'You Win!!!')
-        ChangeUserMoney(message, 2 * moneybet)
+        change_user_money(message, 2 * moneybet)
     else:
         await client.send_message(message.channel, 'I Win!!!')
     return

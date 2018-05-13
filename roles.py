@@ -1,26 +1,21 @@
-
-
+import asyncio
 roleList = ['ow', 'lol', 'csgo']
 
-# TODO: CHECK WHY THEY DO NOT ACCEPT 2 PARWAMETERS
-
-
-@client.event
-async def addRole(client , message):
+@asyncio.coroutine
+async def add_role(client , message):
     # Get Available Roles From Server
+    print("addrole happened")
     availableServerRoles = message.server.roles
     rolemessage = str(message.content)
     roles = rolemessage.split()
     roles.remove('$addrole')
     for role in availableServerRoles:
         if role.name in roleList and role.name in roles:
-            print(role.name)
             await client.add_roles(message.author, role)
     return
 
-
-@client.event
-async def removeRole(client , message):
+@asyncio.coroutine
+async def remove_role(client , message):
     # Get Available Roles From Server
     rolemessage = str(message.content)
     roles = rolemessage.split()
