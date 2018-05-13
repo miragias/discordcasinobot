@@ -7,5 +7,5 @@ Some simple games for our greek discord server.
 - Keep Database with usermoney.
 
 ### TODO: 
-  - Make the python project easy for othere pc's to build with dependencies.
   - Make LoL stats for server.
+  - Make flask server
