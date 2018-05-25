@@ -4,14 +4,21 @@ from roles import add_role,remove_role
 from serverinfoscrapper import get_server_data
 from webserver import do_something
 
-from multiprocessing import Process , Queue
+from multiprocessing import Process , Pipe
 import discord
 import asyncio
 
 client = None
 
+#TODO(JohnMir): Make config file for options:
+"""
+1)Server
+2)Wait time between intervals to send data
+"""
 #TODO(JohnMir): Clean this up
-def run_bot(q):
+def run_bot(pipe):
+        output_p , input_p = pipe
+        output_p.close()
         client = discord.Client()
 
         @client.event
@@ -25,7 +32,7 @@ def run_bot(q):
                 #Add bot tasks here after initialization is complete
                 loop = client.loop
                 #q.put("TEST")
-                loop.create_task(get_server_data(client , q))
+                loop.create_task(get_server_data(client , input_p))
 
         @client.event
         async def on_message(message):
@@ -49,11 +56,10 @@ def run_bot(q):
 
 
 if __name__ == '__main__':
-        q = Queue()
-        p = Process(target=run_bot, args=(q , ))
+        output_p , input_p = Pipe()
+        p = Process(target=run_bot, args=((output_p , input_p),))
         p.start()
-        #print(q.get())
-        d = Process(target=do_something, args=(q , ))
+        d = Process(target=do_something, args=((output_p , input_p),))
         d.start()
         p.join()
 
